@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Scrapper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+</head>
+<body>
+    <main class="container">
+        <h1>Welcome to {{year}} {{version}} job search tool.</h1>
+        <h2>How to use</h2>
+        <h3>
+            1. Enter your keyword in the search engine.<br>
+            2. Select domain you want to make search.<br>
+            3. Press enter or click search button to initiate search. You can search for multiple keywords using blank space.<br>
+            4. After few seconds, .csv result containing all the job will be available.<br>
+            5. Download .csv and nail your job application!<br>
+        </h3>
+        <form action="/search">
+            <input type="text" name="job_keyword" placeholder="What are you looking for?" />
+            <button>Search</button>
+        </form>
+        <br>
+        <form method="POST">
+            Choose platforms:
+            <input type="submit" name="wwr_btn" value="We work remotely">
+            <input type="submit" name="wanted_btn" value="Wanted">
+        </form>
+    </main>
+</body>
+</html>

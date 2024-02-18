@@ -12,20 +12,16 @@
         <h3>
             1. Enter your keyword in the search engine.<br>
             2. Select domain you want to make search.<br>
-            3. Press enter or click search button to initiate search. You can search for multiple keywords using blank space.<br>
-            4. After few seconds, .csv result containing all the job will be available.<br>
+            3. Click a search button to select search domain and initiate search. <br>
+            4. After few seconds, .csv result containing all the jobs will be available.<br>
             5. Download .csv and nail your job application!<br>
         </h3>
         <form action="/search">
             <input type="text" name="job_keyword" placeholder="What are you looking for?" />
-            <button>Search</button>
+            <input type="submit" name="platform" value="search by position" />
+            <input type="submit" name="platform" value="search by skill" />
         </form>
         <br>
-        <form method="POST">
-            Choose platforms:
-            <input type="submit" name="wwr_btn" value="We work remotely">
-            <input type="submit" name="wanted_btn" value="Wanted">
-        </form>
     </main>
 </body>
 </html>

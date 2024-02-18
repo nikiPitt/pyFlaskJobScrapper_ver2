@@ -12,8 +12,9 @@
         <table role="grid"><figure>
             <thead>
             <tr>
-                <th>Position</th>
+                <th>Title</th>
                 <th>Company</th>
+                <th>Position</th>
                 <th>Location</th>
                 <th>Apply link</th>
             </tr>
@@ -23,7 +24,8 @@
             <tr>
                 <td>{{job.title}}</td>
                 <td>{{job.company}}</td>
-                <td>{{job.location}}</td>
+                <td>{{job.position}}</td>
+                <td>{{job.region}}</td>
                 <td><a href="{{job.url}}">Apply &rarr;</a></td>
             </tr>
             {% endfor %}

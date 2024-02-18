@@ -27,7 +27,10 @@ def render():
         else:
             jobs = startwwr(keyword)
         db[keyword] = jobs
-    return render_template("search.html", keyword=keyword, jobs=jobs)
+    if domain == "search by skill":
+        return render_template("search_wanted.html", keyword=keyword, jobs=jobs)
+    else:
+        return render_template("search_wwr.html", keyword=keyword, jobs=jobs)
 
 @app.route("/export")
 def export():
